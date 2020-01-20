@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200120021735_initialDbCreation.cs" />
+    <Compile Remove="Migrations\20200120021735_initialDbCreation.Designer.cs" />
+    <Compile Remove="Migrations\20200120022025_InitialCreation.cs" />
+    <Compile Remove="Migrations\20200120022025_InitialCreation.Designer.cs" />
+    <Compile Remove="Migrations\20200120022335_InitialCreation.cs" />
+    <Compile Remove="Migrations\20200120022335_InitialCreation.Designer.cs" />
+    <Compile Remove="Migrations\20200120022530_InitialCreation.cs" />
+    <Compile Remove="Migrations\20200120022530_InitialCreation.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Negocio\Business.csproj" />
+  </ItemGroup>
+
+</Project>
